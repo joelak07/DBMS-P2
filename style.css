@@ -28,7 +28,8 @@
     /*font-family: 'Pacifico', cursive;*/
     font-family: 'Bebas Neue', sans-serif;
     font-weight: bold;
-    margin-top: 6.5%;
+    /*margin-top: 4%;*/
+    margin: 0 auto;
 }
 
 .landing a {
@@ -54,7 +55,7 @@
     padding: 36px 36px;
 }
 
-.head h1 {
+h1, .head h1 {
     text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
@@ -69,6 +70,44 @@
                0 20px 20px rgba(0,0,0,.15);
 }
 
+h2 {
+  font-size: 40px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: var(--c1);
+  text-align: center;
+  padding: 36px 36px;
+  text-shadow: 0 1px 0 #ccc,
+  0 2px 0 #c9c9c9,
+  0 3px 0 #bbb,
+  0 4px 0 #b9b9b9,
+  0 5px 0 #aaa,
+}
+
+.menu {
+  width: 100%;
+  background-color: var(--c2);
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--c2);
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  display: block;
+  color: var(--c1);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 .sub {
     display: flex;
     align-items: center;
@@ -78,6 +117,8 @@
     padding: 50px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: var(--c1);
 }
 
@@ -85,6 +126,7 @@
     position: relative;
     margin: 50px;
     width: 400px;
+    min-width: 400px;
     height: 250px;
     background-color: #f2f2f2;
     border-radius: 10px;
@@ -97,6 +139,28 @@
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   
+  .cover {
+    color: var(--c1);
+    text-align: center;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+  }
+
   .card svg {
     width: 48px;
     fill: #333;
@@ -151,7 +215,7 @@
 
   .content {
     width: 100%;
-    padding: 50px;
+    margin-top: 0px;;
   }
 
   .search-bar {
@@ -159,15 +223,63 @@
     width: 100%;
   }
 
-  .search-bar input {
+  .search-bar #in {
     width: 30%;
     height: 30px;
     padding: 12px 24px;
     border-radius: 10px;
   }
 
-  .search-bar button {
+  .search-bar #s {
     height: 30px;
     padding: 0 12px;
     border-radius: 10px;
+    background-color: var(--c2);
+    color: var(--c1);
+    border: none;
+  }
+
+  form h2 {
+    font-size: 30px;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .container {
+    padding: 30px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .record {
+    text-align: left;
+    width: 90%;
+    color: var(--c1);
+    border: 1px solid var(--c4);
+    border-radius: 10px;
+    padding: 12px 24px;
+    margin: 12px auto;
+  }
+
+  .f_cont form {
+    background-color: var(--c4);
+    color: var(--c1);
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+
+  .f_cont form input,select {
+    width: 100%;
+    border-radius: 1px;
+    border: 1px solid var(--c4);
+  }
+
+  #sub_but {
+    padding: 12px 24px;
+    color: var(--c1);
+    margin-top: 4px;
+    background-color: var(--c2);
   }

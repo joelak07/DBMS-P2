@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>National Park | Visitor Portal | Ticket</title>
+    <title>National Park</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,20 +22,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body bgcolor="#3F4E4F">
+<body>
     <div class="main">
-        <div class="head sub">
-            <h1>National Park | </h1>
-            <h5 style="letter-spacing: 3px;">Visitor Portal</h3>
-        </div>
-        <div class="content">
-            <div class="search-bar">
-                <input type="text" placeholder="Search..">
-                <button type="submit"><i class="fa fa-search"></i></button>
+        <div class="landing">
+            <div class="back">
+                <h1>National Park</h1>
+            </div>
+            <div class="nav">
+                <a href="visitor.php">Visitor portal</a>
+                <a href="admin.php">Admin portal</a>
             </div>
         </div>
     </div>
